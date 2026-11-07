@@ -1,0 +1,42 @@
+{
+  "name": "dsh-exam-helper",
+  "version": "0.1.0",
+  "description": "DSH 插件：读屏答题的机械部分（读题/选选项/翻页/截图/交卷），答案由模型判断",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "exam",
+    "dsha",
+    "android"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": "*",
+    "@deepseek-ai/schemastery": "*"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh-tools": {
+      "optional": true
+    },
+    "@deepseek-ai/schemastery": {
+      "optional": true
+    }
+  }
+}

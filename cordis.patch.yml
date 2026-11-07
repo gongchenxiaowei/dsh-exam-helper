@@ -1,0 +1,5 @@
+# dsh-exam-helper —— 挂载声明（跟 bili 插件同一套写法）
+- insert:
+    - id: exam-helper
+      name: dsh-exam-helper
+      config: {}
